@@ -1,12 +1,14 @@
 import "./App.css";
-import Testimonio from "./components/Testimonio";
+import Testimony from "./components/Testimony";
+import Users from "./components/users";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <h1>Testimonios</h1>
-        <Testimonio
+        <h1>Axel Labs employees </h1>
+
+        {/* <Testimony
           nombre="Lisa"
           pais="Uruguay"
           imagen="Lisa"
@@ -17,7 +19,7 @@ function App() {
           (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal 
           manera que logró hacer un libro de textos especimen. "'
         />
-        <Testimonio
+        <Testimony
           nombre="Bart"
           pais="Uruguay"
           imagen="Bart"
@@ -28,7 +30,7 @@ function App() {
           (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal 
           manera que logró hacer un libro de textos especimen. "'
         />
-        <Testimonio
+        <Testimony
           nombre="Rafa"
           pais="Uruguay"
           imagen="Rafa"
@@ -39,7 +41,7 @@ function App() {
           (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal 
           manera que logró hacer un libro de textos especimen. "'
         />
-        <Testimonio
+        <Testimony
           nombre="Marge"
           pais="Uruguay"
           imagen="Marge"
@@ -49,7 +51,8 @@ function App() {
           Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
           (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal 
           manera que logró hacer un libro de textos especimen. "'
-        />
+        /> */}
+        <Users />
       </div>
     </div>
   );
