@@ -9,19 +9,23 @@ const Users = () => {
 
   const getUserList = async () => {
     // const data = await fetch("https://jsonplaceholder.typicode.com/users");
-    const data = await fetch("https://reqres.in/api/users?page=2");
+    // const data = await fetch("https://reqres.in/api/users?page=2");
+    const data = await fetch("https://randomuser.me/api/?results=5000");
     const users = await data.json();
-    setList(users.data);
+    setList(users.results);
   };
   return list.map((item) => (
     <Testimony
-      name={item.first_name}
-      city={item.last_name}
-      // job={item.company.bs}
-      // company={item.company.name}
-      // number={item.phone}
+      image={item.picture.large}
+      title={item.name.title}
+      first={item.name.title}
+      last={item.name.last}
+      city={item.location.city}
+      state={item.location.state}
+      date={item.dob.date}
+      age={item.dob.age}
       email={item.email}
-      image={item.avatar}
+      phone={item.cell}
     />
   ));
 };
