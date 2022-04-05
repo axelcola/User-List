@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Testimony from "./Testimony";
-const pito = "pito";
 const Users = () => {
   const [list, setList] = useState([]);
 
@@ -9,20 +8,20 @@ const Users = () => {
   }, []);
 
   const getUserList = async () => {
-    const data = await fetch("https://jsonplaceholder.typicode.com/users");
-    // const data = await fetch("https://randomuser.me/api/?gender=female");
+    // const data = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await fetch("https://reqres.in/api/users?page=2");
     const users = await data.json();
-    setList(users);
+    setList(users.data);
   };
   return list.map((item) => (
     <Testimony
-      name={item.name}
-      city={item.address.city}
-      job={item.company.bs}
-      company={item.company.name}
-      number={item.phone}
+      name={item.first_name}
+      city={item.last_name}
+      // job={item.company.bs}
+      // company={item.company.name}
+      // number={item.phone}
       email={item.email}
-      image={`https://randomuser.me/api/portraits/men/${item.id}.jpg`}
+      image={item.avatar}
     />
   ));
 };
