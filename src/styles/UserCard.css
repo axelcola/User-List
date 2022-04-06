@@ -1,4 +1,4 @@
-.container-testimony {
+.container-user {
     width: 1170px;
     height: 368px;
     margin: 10px 10px 50;
@@ -8,11 +8,11 @@
     background-color: #fff;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 /9%);
 }
-.image-testimony{
+.image-user{
     height: 100% ;
     width: auto;
 }
-.container-texto-testimony{
+.container-texto-user{
     width: 100%;
     font-size: 18px;
     text-align: center;
@@ -21,15 +21,15 @@
     font-weight: 400;
     line-height: 1.5rem;
 }
-.name-testimony{
+.name-user{
     font-size: 1.3rem;
 }
-.job-testimony{
+.job-user{
     font-size: 1.3rem;
     margin-top:15px;
     padding-bottom:30px;
 }
-.text-testimony{
+.text-user{
     font-size: 1.1rem;
     text-align:justify;
 }

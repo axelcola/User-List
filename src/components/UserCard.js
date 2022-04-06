@@ -1,16 +1,12 @@
 import React from "react";
-import "../styles/Testimony.css";
+import "../styles/UserCard.css";
 
-function Testimony(props) {
+function UserCard(props) {
   return (
-    <div className="container-testimony">
-      <img
-        className="image-testimony"
-        src={props.image}
-        alt={`${props.first}`}
-      />
-      <div className="container-texto-testimony">
-        <p className="name-testimony">
+    <div className="container-user">
+      <img className="image-user" src={props.image} alt={`${props.first}`} />
+      <div className="container-texto-user">
+        <p className="name-user">
           Name: {props.title} {props.first} {props.last}
         </p>
         <p>
@@ -22,11 +18,11 @@ function Testimony(props) {
           Date: {props.date} ({props.age}){" "}
         </p>
 
-        <p className="job-testimony">
+        <p className="job-user">
           Contact: {props.email} Phone number: {props.phone}
         </p>
       </div>
     </div>
   );
 }
-export default Testimony;
+export default UserCard;
