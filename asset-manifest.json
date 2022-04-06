@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/employee-registration/static/css/main.373adbc0.css",
-    "main.js": "/employee-registration/static/js/main.431f0370.js",
+    "main.css": "/employee-registration/static/css/main.a45cc48b.css",
+    "main.js": "/employee-registration/static/js/main.b431fb43.js",
     "index.html": "/employee-registration/index.html",
-    "main.373adbc0.css.map": "/employee-registration/static/css/main.373adbc0.css.map",
-    "main.431f0370.js.map": "/employee-registration/static/js/main.431f0370.js.map"
+    "main.a45cc48b.css.map": "/employee-registration/static/css/main.a45cc48b.css.map",
+    "main.b431fb43.js.map": "/employee-registration/static/js/main.b431fb43.js.map"
   },
   "entrypoints": [
-    "static/css/main.373adbc0.css",
-    "static/js/main.431f0370.js"
+    "static/css/main.a45cc48b.css",
+    "static/js/main.b431fb43.js"
   ]
 }
