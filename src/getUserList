@@ -1,0 +1,17 @@
+import { useState } from "react";
+import UserContext from "./context/UserContext";
+
+const getUserList = async () => {
+  const [loading, setLoading] = useState(false);
+  const { list, setList } = useContext(UserContext);
+
+  setLoading(true);
+  const data = await fetch("https://randomuser.me/api/?results=30");
+  const users = await data.json();
+  setList(users.results);
+  setLoading(false);
+
+  return { list, loading };
+};
+
+export default getUserList;

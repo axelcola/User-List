@@ -1,5 +1,5 @@
 import UserList from "./userList";
-import GetUser from "./getUsers";
+import GetUser from "./getUsers.js";
 import Spinner from "./Spinner";
 
 const Users = () => {

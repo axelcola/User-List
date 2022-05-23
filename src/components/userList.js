@@ -16,6 +16,7 @@ const UserList = () => {
       age={item.dob.age}
       email={item.email}
       phone={item.cell}
+      id={item.id.value}
     />
   ));
 };
